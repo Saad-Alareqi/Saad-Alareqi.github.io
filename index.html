@@ -14,12 +14,23 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/buttons.css">
 
-    <script>
-        function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
-        function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully";},1000);setTimeout(function(){window.msgs.innerHTML="6.72 Exploit Host Menu";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
-        </script>
-        <script src="assets/js/exp_common.js"></script>
-        <script src="assets/js/exp_jailbreak.js"></script>
+    <style>
+        /*Temporary Fix for Font Awesome ApplicatonManifest offline Cache */
+        @font-face {
+             font-family: 'FontAwesome';
+             src: url('../assets/fonts/fontawesome-webfont.eot');
+             src: url('../assets/fonts/fontawesome-webfont.eot') format('embedded-opentype'),       url('../assets/fonts/fontawesome-webfont.woff2') format('woff2'), url('../assets/fonts/fontawesome-webfont.woff') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg') format('svg');
+               font-weight: normal;
+               font-style: normal;
+        }
+        </style>
+
+<script>
+    function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+    function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+    </script>
+    <script src="exp_common.js"></script>
+    <script src="exp_jailbreak.js"></script>
 </head>
 
 <body id="page-top" style="background-color:#59344F;">
@@ -447,28 +458,28 @@ var script = document.createElement('script');script.src = "assets/js/exp_loader
 function load_fanthresh(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Fan Threshold ...</h1>";
 LoadedMSG="Fan Threshold Loaded ✔";fanTemp=tempC.value;//alert(fanTemp);
-var script = document.createElement('script');script.src = "pl_fanthresh.js";document.getElementsByTagName('head')[0].appendChild(script);
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "assets/js/pl_fanthresh.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "assets/js/exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
 function load_todex(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading ToDEX ...</h1>";
 LoadedMSG="ToDEX Loaded ✔";
-var script = document.createElement('script');script.src = "pl_ToDEX.js";document.getElementsByTagName('head')[0].appendChild(script);
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "assets/js/pl_ToDEX.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "assets/js/exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
 function load_exploit_HEN(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Exploit + HEN ...</h1>";
-LoadedMSG="Exploit + HEN Loaded ✔";ExploitMira="HEN";MiraSRC="pl_HEN.js";
+LoadedMSG="Exploit + HEN Loaded ✔";ExploitMira="HEN";MiraSRC="assets/js/pl_HEN.js";
 setTimeout(jailbreak,500);
 }
 
 function load_HEN(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading HEN ...</h1>";
 LoadedMSG="HEN Loaded ✔";
-var script = document.createElement('script');script.src = "pl_HEN.js";document.getElementsByTagName('head')[0].appendChild(script);
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "assets/js/pl_HEN.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "assets/js/exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
     </script>
