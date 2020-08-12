@@ -40,6 +40,7 @@ assets/js/pl_mira_unofficial.js
 assets/js/pl_fanthresh.js
 assets/js/freelancer.js
 assets/js/jquery.min.js
+assets/js/pl_WebRTE.js
 
 FALLBACK:
 /assets/fonts/fontawesome-webfont.woff assets/fonts/fontawesome-webfont.woff
