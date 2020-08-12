@@ -48,4 +48,3 @@ FALLBACK:
 /assets/fonts/fontawesome-webfont.svg assets/fonts/fontawesome-webfont.svg
 /assets/fonts/fontawesome-webfont.ttf assets/fonts/fontawesome-webfont.ttf
 /assets/fonts/FontAwesome.otf assets/fonts/FontAwesome.otf
-?>
